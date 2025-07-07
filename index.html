@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeritageConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" onclick="showPopup('resources')">Resources</a></li>
+            <li><a href="#" onclick="showPopup('contact')">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="curtain-container">
+    <div class="curtain-left"></div>
+    <div class="curtain-right"></div>
+    <div class="content hidden">
+        <h1>Welcome to HeritageConnect</h1>
+        <p>Preserving, Promoting, and Celebrating Heritage Sites and Traditions Worldwide</p>
+        <button onclick="window.location.href='features.html'">Explore Features</button>
+    </div>
+    <button class="curtain-button" onclick="openCurtain()">Discover Heritage</button>
+</div>
+
+<!-- Popup for Resources and Contact -->
+<div id="popup" class="popup hidden">
+    <div id="popup-content"></div>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

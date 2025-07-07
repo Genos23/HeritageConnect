@@ -1,0 +1,118 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Learning Events Section */
+#learning-events {
+    padding: 40px;
+    text-align: center;
+    background-image: url('images/features-background.jpg'); /* Add your welcome background image here */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; 
+}
+
+.learning-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Event Box Styles */
+.event-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.event-box img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.event-details p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.learn-more {
+    background-color: #ffab00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.learn-more:hover {
+    background-color: #e89c00;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .event-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-box img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

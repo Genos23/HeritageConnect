@@ -1,0 +1,139 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+#community-contributions {
+    padding: 40px;
+    background-color: #fff;
+    background-image: url('images/features-background.jpg'); /* Add your welcome background image here */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #444;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Contribution Form Styles */
+.contribution-form {
+    margin-bottom: 50px;
+}
+
+.contribution-form h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.contribution-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.contribution-form input, .contribution-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.contribution-form button {
+    padding: 10px 20px;
+    background-color: #ffab00;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contribution-form button:hover {
+    background-color: #e89c00;
+}
+
+/* Contribution Gallery Styles */
+.contribution-gallery h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.gallery-item p {
+    font-size: 1em;
+    color: #666;
+}

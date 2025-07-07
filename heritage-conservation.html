@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Conservation Projects</title>
+    <link rel="stylesheet" href="heritage-conservation.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+           
+        </ul>
+    </nav>
+</header>
+
+<section id="heritage-conservation">
+    <div class="heritage-container">
+        <h1>Heritage Conservation Projects</h1>
+        <p>Join efforts to preserve and protect cultural landmarks. Learn more about ongoing conservation projects and how you can contribute to preserving our cultural heritage.</p>
+        
+        <!-- Project List -->
+        <div class="project-list">
+            <div class="project-item">
+                <h2>Taj Mahal Preservation</h2>
+                <p>Help restore and maintain the Taj Mahal's pristine condition through these conservation efforts.</p>
+                <button class="learn-more" data-project="tajMahal">Learn More</button>
+            </div>
+            
+            <div class="project-item">
+                <h2>Qutub Minar Conservation</h2>
+                <p>Participate in efforts to protect this ancient monument from environmental damage.</p>
+                <button class="learn-more" data-project="qutubMinar">Learn More</button>
+            </div>
+            
+            <div class="project-item">
+                <h2>Red Fort Restoration</h2>
+                <p>Support the continued preservation of this historical fort in Delhi.</p>
+                <button class="learn-more" data-project="redFort">Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Popup -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-details"></p>
+        <!-- External Link -->
+        <a id="project-link" href="#" target="_blank" class="project-link">Visit Site for More Details</a>
+    </div>
+</div>
+
+<script src="heritage-conservation.js"></script>
+</body>
+</html>

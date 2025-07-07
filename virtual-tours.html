@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour</title>
+    <link rel="stylesheet" href="virtual-tours.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <!-- Ensure this points to your home page location -->
+            <li><a href="index.html">Home</a></li> <!-- Make sure the file is in the correct path -->
+        </ul>
+    </nav>
+</header>
+
+<section id="virtual-tour">
+    <div class="virtual-tour-container">
+        <h2>Explore Virtual Tours of Heritage Sites in India</h2>
+        
+        <!-- Dropdown to select a heritage site -->
+        <div class="tour-selection">
+            <select id="tour-selection">
+                <option value="none">Select a Heritage Site</option>
+                <option value="tour1">Taj Mahal</option>
+                <option value="tour2">Qutub Minar</option>
+                <option value="tour3">Red Fort</option>
+                <option value="tour4">Mysore Palace</option>
+                <option value="tour5">Gateway of India</option>
+                <option value="tour6">Khajuraho Temples</option>
+            </select>
+        </div>
+        
+        <!-- Display the virtual tour -->
+        <div class="virtual-tour-display" id="virtual-tour-display">
+            <!-- 360-degree image or tour will load here -->
+        </div>
+        
+        <!-- Button to explore the selected tour -->
+        <div class="explore-more">
+            <button id="explore-btn">Explore Tour</button>
+        </div>
+    </div>
+</section>
+
+<script src="virtual-tours.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Contributions</title>
+    <link rel="stylesheet" href="community-contributions.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+<section id="community-contributions">
+    <div class="container">
+        <h1>Community Contributions</h1>
+        <p>Share your stories, photos, and experiences with others. Your contributions help to preserve and celebrate our shared heritage!</p>
+
+        <!-- Submission Form -->
+        <div class="contribution-form">
+            <h2>Submit Your Story</h2>
+            <form id="contributionForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="story">Your Story:</label>
+                <textarea id="story" rows="5" required></textarea>
+
+                <label for="photo">Upload a Photo (Optional):</label>
+                <input type="file" id="photo" accept="image/*">
+
+                <button type="submit">Submit Contribution</button>
+            </form>
+        </div>
+
+        <!-- Contribution Gallery -->
+        <div class="contribution-gallery">
+            <h2>Community Contributions</h2>
+            <div id="gallery"></div>
+        </div>
+    </div>
+</section>
+
+<script src="community-contributions.js"></script>
+</body>
+</html>
